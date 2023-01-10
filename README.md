@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# Passo a Passo criar app react(Typescript)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Abrir VS Code
+2. Abrir Terminal Integrado
+3. Digitar <code>"npx create-react-app NOME_DO_APP --template typescript"</code> e pressione ENTER e aguarde o processamento
+4. Digite <code>cd NOME_DO_APP</code> e pressione ENTER para acessar a pasta criada
+5. Digite <code>npm start</code> e pressione ENTER para inicializar sua aplicação "Hello World"
 
-## Available Scripts
+# Instalar Bootstrap
 
-In the project directory, you can run:
+1. No Terminal integrado digite <code>npm install react-bootstrap bootstrap</code>
+2. Quando a instalação finalizar adicione os scripts abaixo no arquivo `public/index.html`:
+
+```
+<script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
+  crossorigin></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin></script>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+  crossorigin="anonymous"
+/>
+```
+
+3. Adicione o import abaixo no arquivo `src/index.tsx`:
+
+```
+import 'bootstrap/dist/css/bootstrap.min.css';
+```
+
+4. Agora siga a documentação do React Bootstrap para criar seu projeto: [React Bootstrap Documentation](https://react-bootstrap.github.io/components/alerts/)
+
+## Scripts Disponiveis
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Esse comando inicia sua aplicação React no seu ambiente local
+Abra [http://localhost:3000](http://localhost:3000) para ver sua aplicação funcionando.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Aprenda mais
 
-### `npm test`
+Quer aprender mais sobre a funcao CREATE REACT APP: [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Quer aprender mais sobre REACT: [React documentation](https://reactjs.org/).
