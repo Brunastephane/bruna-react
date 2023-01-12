@@ -13,6 +13,7 @@ export default function NavBar() {
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: "100px" }}
             navbarScroll
           >
             <Container>
@@ -27,8 +28,8 @@ export default function NavBar() {
             </Container>
             <Nav.Link href="#action1">Home</Nav.Link>
             <Nav.Link href="#action2">Resources</Nav.Link>
-            <Nav.Link href="#action2">Blog</Nav.Link>
-            <Nav.Link href="#action2">Contact</Nav.Link>
+            <Nav.Link href="#action3">Blog</Nav.Link>
+            <Nav.Link href="#action4">Contact</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
