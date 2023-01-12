@@ -1,0 +1,16 @@
+.customNavbar{
+    background-color: #678983 !important;
+}
+
+.btn-outline-success {
+    --bs-btn-border-color: #E6DDC4 !important;
+    --bs-btn-color: #E6DDC4 !important;
+
+    --bs-btn-hover-bg: #181D31 !important;
+    --bs-btn-hover-border-color: #181D31 !important;
+    --bs-btn-hover-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.nav-link {
+    padding-top: 30px !important;
+}
